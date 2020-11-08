@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>index.html</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../css/interests.css" rel="stylesheet">
+<!--    <script type="text/javascript" src="./interests.js"></script>-->
+</head>
+    
+<body>
+    
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="topnav" id="navbar">
+  <a href="index.html">Home</a>
+  <a href="interests.html">Interests</a>
+  <a href="views.html">Views</a>
+  <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="slides">            
+    <img class="mySlides" src="../img/dance.jpg" style="width:100%" onclick="plusDivs(1)">         
+  <img class="mySlides" src="../img/badminton.jpg" style="width:100%" onclick="plusDivs(1)">
+    
+  <img class="mySlides" src="../img/food.jpg" style="width:100%" onclick="plusDivs(1)">
+  <img class="mySlides" src="https://miro.medium.com/max/3840/1*BchBq5jkzBFZKfH5SrQGTQ.jpeg" style="width:100%" onclick="plusDivs(1)">
+        <img class="mySlides" src="https://media.istockphoto.com/photos/girl-in-headphones-listening-to-music-in-the-city-at-sunset-picture-id958364166?k=6&m=958364166&s=612x612&w=0&h=HGqPKa7lMu76kpXDgcdoUaRdUt9AslNz5RSGN9uB5t0=" style="width:100%" onclick="plusDivs(1)">
+<!--
+
+  <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="next" onclick="plusDivs(1)">&#10095;</button>
+    
+-->
+    </div>
+    
+    
+<!--  javascript for sliding images  -->
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    
+<!--javascript for fixing the navigation bar-->
+
+<!-- javascript for go to top button  -->
+
+
+<script>
+window.onscroll = function() {document.getElementById('navbar').style.position = "fixed"};
+</script>
+        <script>
+        
+          
+           var mybutton = document.getElementById("myBtn"); 
+        mybutton.style.display = "block";
+            function topFunction() {
+//  document.body.scrollTop = 0;
+        
+  document.documentElement.scrollTop = 0;
+}
+        
+    </script>
+</body>
+</html>

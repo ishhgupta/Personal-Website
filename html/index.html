@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>index.html</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    
+    <link href="../css/style.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="interests.html">Interests</a>
+  <a href="views.html">Views</a>
+  <a href="contact.html">Contact</a>
+        <span class="visitor-count">Visitors </span>
+    </div>
+    
+    <div id="div1">
+        <h1 id="myname">Hi,I am Isha Gupta!!</h1>
+        <h2 id="tag">I am a cse student.</h2>
+    </div>
+<script>
+    
+    window.onload=function(){
+        if(localStorage.visitor_count){
+            localStorage.visitor_count=String(Number(localStorage.visitor_count)+1);
+        }
+        else{
+            localStorage.visitor_count="1";
+        }
+           document.querySelector(".visitor-count").innerHTML=`${localStorage.visitor_count} Visitors`;
+    }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+.topnav {
+  overflow:hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+body {
+    background-image: url("https://images.unsplash.com/photo-1529753253655-470be9a42781?ixlib=rb-1.2.1&w=1000&q=80");
+	height: 100vh;
+	background-size:cover; 
+	background-position:center; 
+    margin: 0;
+}
+
+.table1{
+    align-content: center;
+    padding-left: 30%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    margin-bottom: 0%;
+    padding-right: 30%;
+}
+
+table{
+/*  table-layout: auto !important;*/
+    width: 100% !important;
+}
+table,th,td{
+    color: aliceblue;
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+.logos{
+	position: static;
+	padding-left: 45%;
+/*	margin-bottom: 0%;*/
+}
